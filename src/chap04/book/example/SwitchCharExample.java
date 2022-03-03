@@ -2,7 +2,7 @@ package chap04.book.example;
 
 public class SwitchCharExample {
 	public static void main(String[] args) {
-		char grade = 'a';
+		char grade = 'c';
 		
 		switch(grade) {
 		case 'A':
