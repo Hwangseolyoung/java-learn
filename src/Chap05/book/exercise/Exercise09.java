@@ -6,8 +6,7 @@ public class Exercise09 {
 	public static void main(String[] args) {
 		boolean run = true;
 		int studentNum = 0;
-//		int[] scores = null;
-		int[] scores = new int[3];
+		int[] scores = null;
 		Scanner scanner = new Scanner(System.in);
 		
 		while(run) {
@@ -20,34 +19,49 @@ public class Exercise09 {
 			
 			if (selectNo == 1) {
 				System.out.print("학생수 > ");
-				studentNum += scanner.nextInt();
+				studentNum = scanner.nextInt();
+				scores = new int[studentNum]; // 스캐너로 입력된 값 배열로 만들기
 				
 			} else if (selectNo == 2) {
-				System.out.print("scores[0] > ");
-				scores[0] = scanner.nextInt();
-				System.out.print("scores[1] > ");
-				scores[1] = scanner.nextInt();
-				System.out.print("scores[2] > ");
-				scores[2] = scanner.nextInt();
+//				System.out.print("scores[0] > ");
+//				scores[0] = scanner.nextInt();
+//				System.out.print("scores[1] > ");
+//				scores[1] = scanner.nextInt();
+//				System.out.print("scores[2] > ");
+//				scores[2] = scanner.nextInt();
+				
+				for (int i = 0; i < scores.length; i++) {
+					System.out.print("scores[" + i + "]");
+					scores[i] = scanner.nextInt();
+				}
 				
 			} else if (selectNo == 3) {
-				System.out.println("scores[0] : " + scores[0]);
-				System.out.println("scores[1] : " + scores[1]);
-				System.out.println("scores[2] : " + scores[2]);
+//				System.out.println("scores[0] : " + scores[0]);
+//				System.out.println("scores[1] : " + scores[1]);
+//				System.out.println("scores[2] : " + scores[2]);
+				
+				for (int i = 0; i < scores.length; i++) {
+					System.out.println("scores[" + i + "]" + scores[i]);
+				}
 				
 			} else if (selectNo == 4) {
 				int max = 0;
 				int sum = 0;
 				double avg = 0.0;
 				
-				for(int i = 0; i < scores.length; i++) {
-					if (scores[i] > max) {
-						max = scores[i];
-					}
-				}
+//				for(int i = 0; i < scores.length; i++) {
+//					if (scores[i] > max) {
+//						max = scores[i];
+//					}
+//				}
+//				
+//				for(int i = 0; i < scores.length; i++) {
+//					sum += scores[i];
+//				}
 				
-				for(int i = 0; i < scores.length; i++) {
-					sum += scores[i];
+				for (int score : scores) {
+					sum += score;
+					max = (score > max) ? score : max;
 				}
 				avg = (double) sum / studentNum;
 						
@@ -62,6 +76,7 @@ public class Exercise09 {
 		
 		
 		System.out.println("프로그램 종료");
+		scanner.close();
 	}
 
 }

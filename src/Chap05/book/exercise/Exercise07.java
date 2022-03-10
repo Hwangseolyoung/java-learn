@@ -15,6 +15,14 @@ public class Exercise07 {
 			}
 		}
 		
+		// 향상된 for문 사용해서 작성해보기
+		
+		for (int item :array) {
+			if(item > max) { 
+				max = item;
+			}
+		}
+		
 		System.out.println("max: " + max);
 	}
 
