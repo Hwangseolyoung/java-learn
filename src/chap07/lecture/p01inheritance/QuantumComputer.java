@@ -1,6 +1,8 @@
 package chap07.lecture.p01inheritance;
 
 public class QuantumComputer extends Computer {
+	// 상속을 해준 클래스를 super class, parent class라고 한다.
+	// 상속을 받은 클래스는 sub class, child class라고 한다.
 	
 	/*
 	// 필드
