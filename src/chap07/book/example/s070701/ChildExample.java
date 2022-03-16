@@ -7,8 +7,8 @@ public class ChildExample {
 		Parent parent = child;
 		parent.method1();
 		parent.method2();
-//		parent.method3();
-		child.method3();
+//		parent.method3(); (호출 불가능)
+//		child.method3();
 	}
 
 }
