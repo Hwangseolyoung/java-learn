@@ -6,5 +6,9 @@ public class Chihuahua extends Canine {
 	public void cry() {
 		System.out.println("멍멍");
 	}
+	
+	public void angry() {
+		System.out.println("화가 난다!!!");
+	}
 
 }
