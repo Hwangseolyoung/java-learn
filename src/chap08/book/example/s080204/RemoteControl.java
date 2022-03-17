@@ -10,13 +10,13 @@ public interface RemoteControl {
 	void turnOff();
 	void setVolume(int volume);
 	
-	// 디폴트 메소드
+	// 디폴트 메소드  
 	// 실행 내용까지 작성할 수 있다.
 	default void setMute(boolean mute) {
 		if (mute) {
-			System.out.println("무음 처리합니다.");
+			System.out.println("무음 처리 합니다.");
 		} else {
-			System.out.println("무음 해제합니다.");
+			System.out.println("무음 해제 합니다.");
 		}
 	}
 
