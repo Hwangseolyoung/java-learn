@@ -12,6 +12,6 @@ public class RemteControlExample {
 	rc.turnOn();
 	rc.turnOff();
 	
-	
+	}
 
 }
