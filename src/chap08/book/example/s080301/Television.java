@@ -1,5 +1,7 @@
 package chap08.book.example.s080301;
 
+import chap08.book.example.s080203.RemoteControl;
+
 public class Television implements RemoteControl{
 	// 필드
 	private int volume;
