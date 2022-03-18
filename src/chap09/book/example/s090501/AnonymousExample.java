@@ -10,7 +10,7 @@ public class AnonymousExample {
 		anony.method1();
 		
 		// 익명 객체 매개값 사용
-		anony.method2( 
+		anony.method2(
 		new Person() {
 			void study() {
 				System.out.println("공부 합니다.");
@@ -22,6 +22,5 @@ public class AnonymousExample {
 			}	
 		}
 	};
-	}
-
+}
 }
