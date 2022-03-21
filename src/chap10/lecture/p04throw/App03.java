@@ -1,4 +1,4 @@
-package chap10.lecture.p04thow;
+package chap10.lecture.p04throw;
 
 public class App03 {
 	public static void main(String[] args) {
