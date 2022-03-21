@@ -1,4 +1,4 @@
-package chap10.book.exercise;
+package chap10.book.exercise.p6;
 
 public class TryCatchFinallyExample {
 	public static void main(String[] args) {
