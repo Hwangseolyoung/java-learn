@@ -1,6 +1,6 @@
-package chap10.book.example.s100401;
+package chap10.book.example.s100402;
 
-public class CatchByExceptionKindExample {
+public class CatchOrderExample {
 	public static void main(String[] args) {
 
 		try {
@@ -16,8 +16,8 @@ public class CatchByExceptionKindExample {
 			System.out.println("실행 매개값의 수가 부족합니다. ");
 			System.out.println("[실행 방법]");
 			System.out.println("java CatchByExceptionKindExample num1  num2");
-		} catch (NumberFormatException e) {
-			System.out.println("숫자로 변환할 수 없습니다. ");
+		} catch (Exception e) {
+			System.out.println("실행에 문제가 있습니다.");
 		} finally {
 			System.out.println("다시 실행하세요");
 		}
