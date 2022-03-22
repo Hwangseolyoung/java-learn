@@ -1,4 +1,4 @@
-package chap11.book.example.s110304;
+package chap11.book.example.s110304.thinClone;
 
 public class MemberExample {
 	public static void main(String[] args) {

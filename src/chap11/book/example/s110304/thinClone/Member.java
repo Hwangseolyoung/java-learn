@@ -1,4 +1,6 @@
-package chap11.book.example.s110304;
+package chap11.book.example.s110304.thinClone;
+
+import chap11.book.example.s110304.deepClone.Car;
 
 public class Member implements Cloneable{ // 복제할 수 있다는 표시
 	public String id;
@@ -6,6 +8,7 @@ public class Member implements Cloneable{ // 복제할 수 있다는 표시
 	public String password;
 	public int age;
 	public boolean adult;
+	public Car car;
 	
 	public Member(String id, String name, String password, int age, boolean adult) {
 		this.id = id;
