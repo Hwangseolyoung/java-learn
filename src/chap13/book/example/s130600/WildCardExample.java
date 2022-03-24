@@ -2,7 +2,6 @@ package chap13.book.example.s130600;
 
 import java.util.Arrays;
 
-import chap06.book.example.s061101.Person;
 
 public class WildCardExample {
 	public static void registerCourse(Course<?> course) {
