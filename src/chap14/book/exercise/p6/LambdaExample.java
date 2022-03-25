@@ -2,9 +2,6 @@ package chap14.book.exercise.p6;
 
 import java.util.function.ToIntFunction;
 
-import chap14.book.exercise.p06.LambdaExample;
-import chap14.book.exercise.p06.LambdaExample.Student;
-
 public class LambdaExample {
 	public static class Student {
 		// 필드 생성
