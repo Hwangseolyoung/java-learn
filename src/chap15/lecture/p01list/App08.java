@@ -12,14 +12,17 @@ public class App08 {
 		System.out.println(list);
 		
 		// 각 element를 2배값으로 변경
-		/*
+		
+		// for사용
 		for (int i = 0; i < list.size(); i++) {
 			Integer origin = list.get(i);
 			list.set(i, origin * 2);
-		}*/
+	
+		// replaceAll 사용
 		list.replaceAll(e -> e * 2);
 		
 		System.out.println(list);
 	}
+}
 }
 
