@@ -25,7 +25,7 @@ public class App06 {
 			System.out.println(element);
 		}
 		
-		// foreach 
+		// foreach
 		System.out.println("#foreach");
 		list.forEach(e -> System.out.println(e)); // 람다식
 		
