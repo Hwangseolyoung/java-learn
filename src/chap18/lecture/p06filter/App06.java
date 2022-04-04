@@ -13,27 +13,53 @@ public class App06 {
 		// output/FilterExample51.txt 를
 		// output/FilterExample6.txt 으로 복사하기
 		
-		// 원본파일
-		String origin = "output/FilterExample51.txt";
-		
-		// 복사파일
-		String copy = "output/FilterExample6.txt";
-		
-		Reader rd = new FileReader(origin);
-		Reader br = new BufferedReader(rd);
-		
-		Writer writer = new FileWriter(copy);
-		Writer bw = new BufferedWriter(writer);
-		
-		int data = 0;
-		
-		while((data = rd.read()) != -1) {
-			bw.write(data);
-		}
-		
-		System.out.println("복사 완료!!");
+		copyNormal();
+		copyBuffered();
 		
 
 	}
 	
+	private static void copyBuffered() throws Exception {
+		String src = "output/FilterExample51.txt";
+		String des = "output/FilterExample6.txt";
+		
+		Reader rd = new BufferedReader(new FileReader(src));
+		Writer wr = new BufferedWriter(new FileWriter(des));
+		
+		int data = 0;
+		
+		long start = System.currentTimeMillis();
+		while((data = rd.read()) != -1) {
+			wr.write(data);
+		}
+		long end = System.currentTimeMillis();
+		
+		System.out.println(end - start);
+		
+		wr.close();
+		rd.close();
+	}
+	
+	private static void copyNormal() throws Exception {
+		String src = "output/FilterExample51.txt";
+		String des = "output/FilterExample6.txt";
+		
+		Reader rd = new FileReader(src);
+		Writer wr = new FileWriter(des);
+		
+		int data = 0;
+		
+		long start = System.currentTimeMillis();
+		while((data = rd.read()) != -1) {
+			wr.write(data);
+		}
+		long end = System.currentTimeMillis();
+		
+		wr.close();
+		rd.close();
+		
+		System.out.println(end - start);
+		
+	}
+ 	
 }
